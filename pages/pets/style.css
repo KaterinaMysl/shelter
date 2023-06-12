@@ -1,0 +1,764 @@
+@font-face {
+  font-family: "Georgia";
+  src: url("../../assets/fonts/Georgia/Georgia.woff2") format("woff2"),
+    url("../../assets/fonts/Georgia/Georgia.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url("../../assets/fonts/Georgia/Georgia-Italic.woff2") format("woff2"),
+    url("../../assets/fonts/Georgia/Georgia-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url("../../assets/fonts/Georgia/Georgia-BoldItalic.woff2")
+      format("woff2"),
+    url("../../assets/fonts/Georgia/Georgia-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url("../../assets/fonts/Georgia/Georgia-Bold.woff2") format("woff2"),
+    url("../../assets/fonts/Georgia/Georgia-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arial Narrow";
+  src: url("../../assets/fonts/Arial/ArialNarrow-Bold.woff2") format("woff2"),
+    url("../../assets/fonts/Arial/ArialNarrow-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arial Narrow";
+  src: url("../../assets/fonts/Arial/ArialNarrow-BoldItalic.woff2")
+      format("woff2"),
+    url("../../assets/fonts/Arial/ArialNarrow-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url("../../assets/fonts/Arial/ArialMT.woff2") format("woff2"),
+    url("../../assets/fonts/Arial/ArialMT.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url("../../assets/fonts/Arial/Arial-ItalicMT.woff2") format("woff2"),
+    url("../../assets/fonts/Arial/Arial-ItalicMT.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arial Narrow";
+  src: url("../../assets/fonts/Arial/ArialNarrow.woff2") format("woff2"),
+    url("../../assets/fonts/Arial/ArialNarrow.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arial Narrow";
+  src: url("../../assets/fonts/Arial/ArialNarrow-Italic.woff2") format("woff2"),
+    url("../../assets/fonts/Arial/ArialNarrow-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url("../../assets/fonts/Arial/Arial-BoldMT.woff2") format("woff2"),
+    url("../../assets/fonts/Arial/Arial-BoldMT.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url("../../assets/fonts/Arial/Arial-BoldItalicMT.woff2") format("woff2"),
+    url("../../assets/fonts/Arial/Arial-BoldItalicMT.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url("../../assets/fonts/Arial/Arial-Black.woff2") format("woff2"),
+    url("../../assets/fonts/Arial/Arial-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  scroll-behavior: smooth;
+}
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.__container {
+  max-width: 1280px;
+  margin: 0px auto;
+  padding: 0px 40px;
+}
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 50;
+  overflow: hidden;
+}
+.header__container {
+  display: flex;
+  padding-top: 30px;
+  justify-content: space-between;
+}
+.header__logo {
+  padding-bottom: 29px;
+}
+.logo__link {
+  transition: 0.3s;
+}
+.logo__title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  /* font-size: 32px; */
+  font-size: 2rem;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  padding: 1px 0px 0px 0px;
+}
+.logo__text {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  /* font-size: 13px; */
+  font-size: 0.81rem;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: #292929;
+  padding: 10px 0px 0px 4px;
+}
+.logo__link:hover,
+.logo__link:active,
+.logo__link:focus {
+  opacity: 75%;
+  box-shadow: 5px 5px 30px rgba(13, 13, 13, 0.144);
+}
+.menu__list {
+  display: flex;
+}
+.menu__item {
+  padding: 16px 0px 20px 36px;
+}
+.menu__link {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  /* font-size: 15px; */
+  font-size: 0.94rem;
+  line-height: 160%;
+  color: #545454;
+  transition: 0.3s;
+}
+.choose-link {
+  position: relative;
+  color: #292929;
+  cursor: default;
+  pointer-events: none;
+  border-bottom: 3px solid #f1cdb3;
+  padding: 0px 0px 4px 0px;
+}
+.menu__link:not(.choose-link):hover {
+  color: #292929;
+}
+.menu__link:not(.choose-link):active,
+.menu__link:not(.choose-link):focus {
+  color: #292929;
+  border-bottom: 3px solid #f1cdb3;
+  padding: 0px 0px 4px 0px;
+}
+.header__burger {
+  display: none;
+}
+.main {
+  flex: 1 1 auto;
+  background: #f6f6f6;
+}
+.main__ourfriends {
+  background: #f6f6f6;
+}
+.ourfriends__container {
+  display: flex;
+  flex-direction: column;
+}
+.ourfriends__title {
+  padding: 200px 0px 0px 3px;
+  align-self: center;
+  width: 100%;
+  text-align: center;
+}
+.title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  /* font-size: 35px; */
+  font-size: 2.19rem;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+.ourfriends__cards {
+  display: flex;
+  padding: 59px 0px 0px 0px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 29px 40px;
+  flex-wrap: wrap;
+  transition: 0.3s;
+}
+.ourfriends__slider {
+  margin: auto;
+}
+.ourfriends__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  background: #fafafa;
+  border-radius: 9px;
+  transition: 0.3s;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.card__photo {
+  flex: 1 1 auto;
+}
+.card__img {
+  max-width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 9px 9px 0px 0px;
+}
+.card__name {
+  padding: 30px 0px 0px 1px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  /* font-size: 20px; */
+  font-size: 1.25rem;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+.card__button {
+  padding: 30px 0px 30px 0px;
+  display: flex;
+  justify-content: center;
+}
+.card__text-button {
+  display: inline-block;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  padding: 13px 43px 13px 43px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  /* font-size: 17px; */
+  font-size: 1.06rem;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  transition: 0.3s;
+}
+.ourfriends__card:hover,
+.ourfriends__card:focus,
+.ourfriends__card:active {
+  background: #ffffff;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  cursor: pointer;
+}
+.ourfriends__card:hover .card__text-button {
+  background: #fddcc4;
+  border: 2px solid #fddcc4;
+}
+.ourfriends__card:active .card__text-button,
+.ourfriends__card:focus .card__text-button {
+  background: #fddcc4;
+  border: 2px solid #fddcc4;
+}
+.ourfriends__arrow-buttons {
+  margin: 10px 0px 101px 0px;
+  display: flex;
+  justify-content: center;
+}
+.ourfriends__arrow-button-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin: 0px 10px 0px 10px;
+  border: 2px solid #cdcdcd;
+  border-radius: 100px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  /* font-size: 20px; */
+  font-size: 1.25rem;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #cdcdcd;
+  transition: 0.3s;
+}
+.ourfriends__arrow-button-left:hover,
+.ourfriends__arrow-button-left:active,
+.ourfriends__arrow-button-left:focus {
+  cursor: default;
+}
+.ourfriends__arrow-button-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin: 0px 10px 0px 10px;
+  background: #f1cdb3;
+  border-radius: 100px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  /* font-size: 20px; */
+  font-size: 1.25rem;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  transition: 0.3s;
+}
+.ourfriends__arrow-button-center:hover,
+.ourfriends__arrow-button-center:active,
+.ourfriends__arrow-button-center:focus {
+  cursor: default;
+}
+.ourfriends__arrow-button-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin: 0px 10px 0px 10px;
+  border: 2px solid #fddcc4;
+  border-radius: 100px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  /* font-size: 20px; */
+  font-size: 1.25rem;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  transition: 0.3s;
+}
+.ourfriends__arrow-button-right:hover {
+  cursor: pointer;
+  background: #fddcc4;
+}
+.ourfriends__arrow-button-right:active,
+.ourfriends__arrow-button-right:focus {
+  cursor: pointer;
+  background: #f1cdb3;
+  border: 2px solid #f1cdb3;
+}
+.footer {
+  background: url("../../assets/images/footer-gradient-background.png");
+  background-size: cover;
+}
+.footer__container {
+  display: flex;
+  align-items: flex-end;
+}
+.footer__content {
+  display: flex;
+}
+.footer__column1 {
+  padding: 0px 126px 0px 0px;
+}
+.footer__column2 {
+  padding: 0px 143px 0px 0px;
+}
+.footer__title {
+  padding: 57px 0px 0px 0px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  /* font-size: 35px; */
+  font-size: 2.19rem;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+.footer__contact-email {
+  padding: 39px 0px 0px 0px;
+}
+.footer__contact-tel {
+  padding: 40px 0px 60px 0px;
+}
+.footer__contact-adr1 {
+  padding: 31px 0px 0px 0px;
+}
+.footer__contact-adr2 {
+  padding: 33px 0px 61px 0px;
+}
+.footer__contact-link {
+  display: flex;
+  transition: 0.3s;
+}
+.footer__img-icon-contact {
+  display: flex;
+  align-items: center;
+}
+.footer__img-icon {
+  padding: 0px 20px 0px 0px;
+}
+.footer__text {
+  display: flex;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  /* font-size: 20px; */
+  font-size: 1.25rem;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #f1cdb3;
+  align-items: center;
+}
+.footer__contact-link:hover .footer__text,
+.footer__contact-link:focus .footer__text,
+.footer__contact-link:active .footer__text {
+  color: #ffffffe0;
+}
+@media (max-width: 1278.99px) {
+  .ourfriends__cards {
+    max-height: 1393px;
+    overflow: hidden;
+    padding-top: 30px;
+  }
+}
+@media (max-width: 1179.99px) {
+  .ourfriends__button {
+    padding: 60px 0px 100px 2px;
+  }
+  .footer {
+    background: url("../../assets/images/footer-gradient-background768.png");
+    background-size: cover;
+  }
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 24px;
+  }
+  .footer__content {
+    display: flex;
+  }
+  .footer__column1 {
+    padding: 0px 43px 0px 34px;
+  }
+  .footer__column2 {
+    padding: 0px 34px 0px 0px;
+  }
+  .footer__title {
+    padding: 30px 0px 0px 0px;
+  }
+  .footer__photo {
+    padding: 5px 0px 0px 0px;
+  }
+}
+@media (max-width: 969.99px) {
+  .ourfriends__arrow-buttons {
+    margin: -10px 0px 77px 0px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 859.99px) {
+  .__container {
+    max-width: 830px;
+    padding: 0px 30px;
+  }
+  .header__container {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 766.99px) {
+  .header__menu {
+    display: none;
+  }
+  .header__burger {
+    position: relative;
+    z-index: 5;
+    flex: 0 0 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .burger__menu {
+    display: flex;
+    position: relative;
+    flex: 0 0 30px;
+    height: 22px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px 10px 30px 10px;
+  }
+  .burger__menu::before,
+  .burger__menu::after {
+    content: "";
+    background-color: #000000;
+    height: 2px;
+  }
+  .burger__menu span {
+    background-color: #000000;
+    height: 2px;
+  }
+}
+@media (max-width: 744.99px) {
+  .ourfriends__container {
+    align-items: center;
+  }
+  .ourfriends__choose {
+    
+    padding: 42px 0px 0px 0px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 19px 80px;
+    max-width: 330px;
+  }
+  .card__button {
+    padding: 30px 0px 30px 0px;
+  }
+  .card__text-button {
+    padding: 13px 43px 13px 43px;
+  }
+  .ourfriends__button {
+    padding: 42px 0px 42px 0px;
+  }
+  .button__link {
+    padding: 15px 44px 15px 44px;
+  }
+}
+@media (max-width: 639.99px) {
+  .ourfriends__cards {
+    gap: 30px 40px;
+    overflow: hidden;
+    padding: 40px 0px 0px 0px;
+  }
+  .ourfriends__arrow-buttons {
+    margin: 4px 0px 43px 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .ourfriends__arrow-button-left {
+    margin: 0px 5px 0px 5px;
+  }
+  .ourfriends__arrow-button-center {
+    margin: 0px 5px 0px 5px;
+  }
+  .ourfriends__arrow-button-right {
+    margin: 0px 5px 0px 5px;
+  }
+}
+@media (max-width: 629.99px) {
+  .footer {
+    background: url("../../assets/images/footer-gradient-background320.png");
+    background-size: cover;
+  }
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__column1 {
+    padding: 0px 11px 0px 11px;
+  }
+  .footer__column2 {
+    padding: 0px 11px 0px 11px;
+  }
+  .footer__contact-email {
+    padding: 39px 0px 0px 13px;
+  }
+  .footer__contact-tel {
+    padding: 40px 0px 10px 19px;
+  }
+  .footer__contact-adr1 {
+    margin: 0px -10px 0px -11px;
+    padding: 39px 0px 0px 0px;
+  }
+  .footer__contact-adr2 {
+    margin: 0px 0px 0px -11px;
+    padding: 40px 0px 35px 0px;
+  }
+  .footer__img-icon-contact {
+    display: flex;
+    align-items: center;
+  }
+  .footer__photo {
+    display: flex;
+  }
+}
+@media (max-width: 409.99px) {
+  .ourfriends__title {
+    /* font-size: 25px; */
+	 font-size: 1.56rem;
+    padding: 162px 0px 0px 0px;
+  }
+}
+@media (max-width: 344.99px) {
+  .__container {
+    max-width: 320px;
+    padding: 0px 10px;
+  }
+  .header__container {
+    padding-top: 30px;
+  }
+  .header__logo {
+    padding: 0px 0px 29px 10px;
+  }
+  .footer {
+    background: url("../../assets/images/footer-gradient-background320.png");
+    background-size: cover;
+  }
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer__title {
+    padding: 30px 0px 0px 0px;
+    /* font-size: 25px; */
+	 font-size: 1.56rem;
+    text-align: center;
+  }
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__column1 {
+    padding: 0px 11px 0px 11px;
+  }
+  .footer__column2 {
+    padding: 0px 11px 0px 11px;
+  }
+  .footer__contact-email {
+    padding: 39px 0px 0px 13px;
+  }
+  .footer__contact-tel {
+    padding: 40px 0px 10px 19px;
+  }
+  .footer__contact-adr1 {
+    margin: 0px -10px 0px -11px;
+    padding: 39px 0px 0px 0px;
+  }
+  .footer__contact-adr2 {
+    margin: 0px 0px 0px -11px;
+    padding: 40px 0px 35px 0px;
+  }
+  .footer__img-icon-contact {
+    display: flex;
+    align-items: center;
+  }
+  .footer__img-icon {
+    padding: 0px 20px 0px 0px;
+  }
+  .footer__text {
+    display: flex;
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 20px; */
+	 font-size: 1.25rem;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #f1cdb3;
+    align-items: center;
+  }
+  .footer__photo {
+    width: 87%;
+    margin: auto;
+  }
+  .footer__img {
+    width: 100%;
+  }
+}
